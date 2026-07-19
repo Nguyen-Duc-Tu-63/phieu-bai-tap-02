@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusMart - Catalog (Buoi 2)</title>
+    <title>CampusMart — Form & Media (Buoi 2)</title>
 </head>
 <body>
     <header>
@@ -14,6 +14,7 @@
                 <li><a href="categories">Trang chu</a></li>
                 <li><a href="products">San Pham</a></li>
                 <li><a href="about">Gioi thieu</a></li>
+                <li><a href="subscribe">Dang ky</a></li>
 
             </ul>
         </nav>
@@ -124,6 +125,36 @@
                 <p>Tong gia tri kho = 41380000</p>
                 <p>So san pham = 8</p>
             </div>
+        </section>
+
+        <section id="subscribe">
+            <form data-testid="cm-subsrcibe-form">
+                <fieldset>
+                    <legend>Dang ky nhan tin</legend>
+
+                    <div>
+                        <label for="name">Ho ten</label>
+                        <input type="text" id="name" name="name" required minlength="2">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="category_id">Danh muc quan tam</label>
+                        <select id="category_id" name="category_id" required>
+                            <option value="">--Chon danh muc--</option>
+                            <option value="1">Ban phim </option>
+                            <option value="2">Chuot</option>
+                            <option value="3">Man hinh</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button type="submit">Dang ky</button>
+                </fieldset>
+            </form>
         </section>
         <!-- CM_EXPECT product_count=8 category_count=3 inventory_value=41380000 -->
     </main>
