@@ -9,7 +9,7 @@
     <header>
         <h1 data-testid="cm-brand">CampusMart</h1>
 
-        <nav data-testid="cm-nav">
+        <nav data-testid="cm-nav" aria-label="Menu chinh">
             <ul>
                 <li><a href="categories">Trang chu</a></li>
                 <li><a href="products">San Pham</a></li>
@@ -48,7 +48,10 @@
                 <tbody>
                     <tr data-testid="cm-product-row" data-sku="KB-01">
                         <td>KB-01</td>
-                        <td><img src="https://placehold.co/50x50?text=K2" alt="Ban phim KB-01"></td>
+                        <td>
+                            <img src="https://placehold.co/50x50?text=K2" alt="Ban phim Keychron K2" width="120" height="80">
+                            <figcaption>KB-01</figcaption>
+                        </td>
                         <td>Keychron K2</td>
                         <td>Ban phim</td>
                         <td>1890000</td>
@@ -57,8 +60,11 @@
 
                      <tr data-testid="cm-product-row" data-sku="KB-02">
                         <td>KB-02</td>
-                        <td><img src="https://placehold.co/50x50?text=3087" alt="Ban phim KB-02"></td>
-                        <td>Akko 3087 K2</td>
+                        <td>
+                            <img src="https://placehold.co/50x50?text=3087" alt="Ban phim Akko 3087" width="120" height="80">
+                            <figcaption>KB-02</figcaption>
+                        </td>
+                        <td>Akko 3087</td>
                         <td>Ban phim</td>
                         <td>1290000</td>
                         <td>5</td>
@@ -66,7 +72,10 @@
 
                      <tr data-testid="cm-product-row" data-sku="MS-01">
                         <td>MS-01</td>
-                        <td><img src="https://placehold.co/50x50?text=3087" alt="Ban phim KB-02"></td>
+                        <td>
+                            <img src="https://placehold.co/50x50?text=3087" alt="Chuot Logitech M331" width="120" height="80">
+                            <figcaption>MS-01</figcaption>
+                        </td>
                         <td>Logitech M331</td>
                         <td>Chuot</td>
                         <td>290000</td>
@@ -75,7 +84,10 @@
 
                      <tr data-testid="cm-product-row" data-sku="MS-02">
                         <td>MS-02</td>
-                        <td><img src="https://placehold.co/50x50?text=3087" alt="Ban phim KB-02"></td>
+                        <td>
+                            <img src="https://placehold.co/50x50?text=3087" alt="Chuot Razer Viper" width="120" height="80">
+                            <figcaption>MS-02</figcaption>
+                        </td>
                         <td>Razer Viper</td>
                         <td>Chuot</td>
                         <td>990000</td>
@@ -85,7 +97,10 @@
 
                     <tr data-testid="cm-product-row" data-sku="KB-03">
                         <td>KB-03</td>
-                        <td><img src="https://placehold.co/50x50?text=3087" alt="Ban phim KB-02"></td>
+                        <td>
+                            <img src="https://placehold.co/50x50?text=3087" alt="Ban phim Leopold FC660M" width="120" height="80">
+                            <figcaption>KB-03</figcaption>
+                        </td>
                         <td>Leopold FC660M</td>
                         <td>Ban phim</td>
                         <td>2750000</td>
@@ -94,7 +109,10 @@
 
                     <tr data-testid="cm-product-row" data-sku="MS-03">
                         <td>MS-03</td>
-                        <td><img src="https://placehold.co/50x50?text=3087" alt="Ban phim KB-02"></td>
+                        <td>
+                            <img src="https://placehold.co/50x50?text=3087" alt="Chuot Xiaomi Silent" width="120" height="80">
+                            <figcaption>MS-03</figcaption>
+                        </td>
                         <td>Xiaomi Silent</td>
                         <td>Chuot</td>
                         <td>250000</td>
@@ -103,7 +121,10 @@
 
                     <tr data-testid="cm-product-row" data-sku="MN-01">
                         <td>MN-01</td>
-                        <td><img src="https://placehold.co/50x50?text=3087" alt="Ban phim KB-02"></td>
+                        <td>
+                            <img src="https://placehold.co/50x50?text=3087" alt="Man hinh Dell 24 inch" width="120" height="80">
+                            <figcaption>MN-01</figcaption>
+                        </td>
                         <td>Dell 24 inch</td>
                         <td>Man hinh</td>
                         <td>3200000</td>
@@ -112,7 +133,9 @@
 
                     <tr data-testid="cm-product-row" data-sku="MN-02">
                         <td>MN-02</td>
-                        <td><img src="https://placehold.co/50x50?text=3087" alt="Ban phim KB-02"></td>
+                        <td>
+                            <img src="https://placehold.co/50x50?text=3087" alt="Man hinh LG UltraFine" width="120" height="80">
+                            <figcaption>MN-02</figcaption></td>
                         <td>LG UltraFine</td>
                         <td>Man hinh</td>
                         <td>8500000</td>
@@ -156,10 +179,33 @@
                 </fieldset>
             </form>
         </section>
+
+
         <!-- CM_EXPECT product_count=8 category_count=3 inventory_value=41380000 -->
     </main>
 
     <footer id="about">
+        <hr>
+        <h2>Lien he voi chung toi</h2>
+
+        <form>
+            <fieldset>
+                <legend>Gui tin nhan</legend>
+
+                <div>
+                    <label for="contact_name">Ho ten</label>
+                    <input type="text" id="contact_name" name="contact_name">
+                </div>
+                <br>
+
+                <div>
+                    <label for="message">Noi dung</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <br>
+                <button type="submit">Gui</button>
+            </fieldset>
+        </form>
         <p>&copy; 2026 Nguyen Duc Tu</p>
     </footer>
 </body>
